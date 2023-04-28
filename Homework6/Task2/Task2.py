@@ -50,8 +50,6 @@ while top_count_index < 5:                                   # цикл, в ко
 # print(top_words_list)      # ['алиса', 'сказала', 'сказал', 'только', 'очень']
 # print(top_numbers_list)    # [403, 126, 100, 87, 71]
 
-#print(f"Топ 5 самых встречаемы слов в Алисе в стране чудес, длинна которых не меньше 5 букв: \n{top_words_list[0]} - {top_numbers_list[0]} раз, \n{top_words_list[1]} - {top_numbers_list[1]} раз, \n{top_words_list[2]} - {top_numbers_list[2]} раз, \n{top_words_list[3]} - {top_numbers_list[3]} раз, \n{top_words_list[4]} - {top_numbers_list[4]} раз.")
-
 print('Топ 5 самых встречаемы слов в Алисе в стране чудес, длинна которых не меньше 5 букв:')
 for i in range(len(top_words_list)):
     for j in range(len(top_numbers_list)):
