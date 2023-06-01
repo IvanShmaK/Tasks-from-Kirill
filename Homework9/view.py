@@ -1,5 +1,6 @@
 # файл для функций ввода и вывода
 import text_fields as tf
+import model
 
 
 def main_menu() -> int:  # функция по выводу меню
@@ -16,12 +17,10 @@ def input_choice(size: int, message: str):  # функция по выбору �
             print(tf.wrong_choice(size))
 
 
-def show_contact(book: list[dict[str, str]], message: str):  # функция по выводу контактов
+def show_contact(book: model.PhoneBook | list[str], message: str):  # функция по выводу контактов
     if book:
         print('\n' + '=' * 72)
-        for i, contact in enumerate(book, 1):
-            print(f'{i:<3} | {contact["name"]:<20} | {contact["phone"]:<20} '
-                  f'| {contact["comment"]:<20}')
+        print(book)
         print('=' * 72 + '\n')
     else:
         print(message)
